@@ -25,13 +25,18 @@
    <h1>Measuring Your Screen Size Using JavaScript, Try with Resizing your Screen</h1> <br>
    <h2>"If the value doesn't change on Resize, Try Refreshing the page"</h2>
    <h3 id="demo"></h3>
-
+	<h3 id="demo2"></h3>
+	
    <script>
       var width = screen.width;
       var height = screen.height;
+	  var widthh = window.innerWidth;
+      var heightt = window.innerHeight;
       
       document.getElementById("demo").innerHTML =
       "Screen Width: " + width + "px" + "<br>" + " Screen Height: " + height + "px";
+	  document.getElementById("demo2").innerHTML =
+      "Screen Width: " + widthh + "px" + "<br>" + " Screen Height: " + heightt + "px";
    </script>
 </body>
 </html>
