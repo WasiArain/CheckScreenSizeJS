@@ -5,38 +5,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title> Screen Measuring by WasiArain</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
    <style>
    	* {
    	    margin: 0;
-           padding: 10px;
-           box-sizing: border-box;
-	   }
-        body {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
+        padding: 10px;
+        box-sizing: border-box;
+		font-family: 'Poppins', sans-serif;
+		transition: all 0.3s ease;
+	  }
+     body {
+         width: 100%;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+      }
    </style>
 </head>
 <body>
    <h1>Measuring Your Screen Size Using JavaScript, Try with Resizing your Screen</h1> <br>
    <h2>"If the value doesn't change on Resize, Try Refreshing the page"</h2>
+	<h3>Orignal Screen Size</h3><br>
    <h3 id="demo"></h3>
+	<h3>Resizable Window</h3><br>
 	<h3 id="demo2"></h3>
 	
    <script>
       var width = screen.width;
       var height = screen.height;
-	  var widthh = window.innerWidth;
-      var heightt = window.innerHeight;
+	  var innerWidth = window.innerWidth;
+      var innerHeightt = window.innerHeight;
       
       document.getElementById("demo").innerHTML =
       "Screen Width: " + width + "px" + "<br>" + " Screen Height: " + height + "px";
 	  document.getElementById("demo2").innerHTML =
-      "Screen Width: " + widthh + "px" + "<br>" + " Screen Height: " + heightt + "px";
+      "Screen Width: " + innerWidth + "px" + "<br>" + " Screen Height: " + innerHeightt + "px";
    </script>
 </body>
 </html>
