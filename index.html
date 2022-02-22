@@ -24,15 +24,22 @@
          justify-content: center;
          align-items: center;
          flex-direction: column;
+		 font-weight: 500;
       }
+	 h3 {
+		 color: #70e000;
+	   }
+	 #demo, #demo2 {
+		 color: crimson:
+	   }
    </style>
 </head>
 <body>
    <h1>Measuring Your Screen Size Using JavaScript, Try with Resizing your Screen</h1> <br>
    <h2>"If the value doesn't change on Resize, Try Refreshing the page"</h2><br>
 	<h3>Orignal Screen Size</h3>
-   <h3 id="demo"></h3>
-	<h3>Resizable Window</h3><br>
+   <h3 id="demo"></h3><br>
+	<h3>Resizable Window</h3>
 	<h3 id="demo2"></h3>
 	
    <script>
@@ -42,10 +49,10 @@
       var innerHeightt = window.innerHeight;
       
       document.getElementById("demo").innerHTML =
-      "Screen Width: " + width + "px" + "<br>" + " Screen Height: " + height + "px";
+      "Screen Width: " + width + "px" + " Screen Height: " + height + "px";
 	   
 	  document.getElementById("demo2").innerHTML =
-      "Window Width: " + innerWidth + "px" + "<br>" + " Window Height: " + innerHeightt + "px";
+      "Window Width: " + innerWidth + "px" + " Window Height: " + innerHeightt + "px";
    </script>
 </body>
 </html>
